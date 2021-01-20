@@ -1,5 +1,5 @@
 {
-  "name": "thecsea/simple-caldav-client",
+  "name": "jrmy-era/remake-caldav-client",
   "type": "library",
   "keywords": ["caldav","client", "simple"],
   "description": "A simple and complete php caldav client",
