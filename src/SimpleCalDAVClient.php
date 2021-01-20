@@ -230,7 +230,7 @@ class SimpleCalDAVClient {
 		$newEtag = $this->client->DoPUTRequest( $href, $new_data, $etag );
 
 		// PUT-request successfull?
-		if ( $this->client->GetHttpResultCode() != '204' && $this->client->GetHttpResultCode() != '200' )
+		if ( $this->client->GetHttpResultCode() != '204' && $this->client->GetHttpResultCode() != '200' && $this->client->GetHttpResultCode() != '201')
 		{
 			throw new CalDAVException('Recieved unknown HTTP status', $this->client);
 		}
